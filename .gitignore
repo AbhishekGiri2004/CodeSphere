@@ -1,24 +1,212 @@
-# Logs
-logs
-*.log
+# Dependencies
+node_modules/
+*/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+bun.lockb
 
-node_modules
-dist
-dist-ssr
-*.local
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+.vite/
 
-# Editor directories and files
-.vscode/*
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE and editor files
+.vscode/
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
+*.swp
+*.swo
+*~
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs and error files
+logs/
+*.log
+hs_err_pid*.log
+replay_pid*.log
+backend.log
+frontend.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and testing
+coverage/
+*.lcov
+.nyc_output/
+.coverage
+htmlcov/
+
+# Cache directories
+.npm
+.eslintcache
+.cache
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Package manager files
+.yarn-integrity
+*.tgz
+yarn.lock
+pnpm-lock.yaml
+
+# Framework specific
+.next
+.nuxt
+.out
+.storybook-out
+
+# Temporary folders and files
+tmp/
+temp/
+server/temp/
+*.tmp
+*.temp
+
+# Code execution artifacts
+*.class
+*.jar
+program_*
+script_*
+Main.class
+Main.java
+*.exe
+*.out
+*.app
+
+# Java/Maven specific
+target/
+*.class
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Configuration files with sensitive data
+config.json
+secrets.json
+*.key
+*.pem
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Documentation build
+docs/_build/
+
+# Deployment
+.vercel
+.netlify
+.firebase/
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Local development
+.local
+
+# Sentry
+.sentryclirc
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Stylelint
+.stylelintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Temporary files created by editors
+*~
+.#*
+\#*#
+.*.swp
+.*.swo
+
+# CodeSphere specific
+server/temp/*
+!server/temp/.gitkeep
+
+# Java error logs
+hs_err_pid*.log
+replay_pid*.log

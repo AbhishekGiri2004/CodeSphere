@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,30 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				editor: {
+					background: '#1A1F2C',
+					text: '#F6F6F7',
+					comment: '#8A898C',
+					keyword: '#8B5CF6',
+					string: '#0EA5E9',
+					variable: '#F97316',
+					function: '#D946EF',
+					operator: '#C8C8C9',
+					lineNumber: '#555555',
+					activeLineBackground: '#222222'
+				},
+				codeSphere: {
+					blue: {
+						primary: '#1EAEDB',
+						light: '#33C3F0',
+						dark: '#0FA0CE',
+					},
+					purple: {
+						primary: '#8B5CF6',
+						light: '#9b87f5',
+						dark: '#7E69AB',
+					}
 				}
 			},
 			borderRadius: {
@@ -84,11 +109,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'cursor-blink': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'cursor-blink': 'cursor-blink 1.2s step-end infinite'
 			}
 		}
 	},
